@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/courseW.dir/main.cpp.o CMakeFiles/courseW.dir/Game.cpp.o CMakeFiles/courseW.dir/TextureManager.cpp.o CMakeFiles/courseW.dir/GameObject.cpp.o -o courseW  -lSDL2 /usr/lib/x86_64-linux-gnu/libSDL2_image.so /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Test.dir/main.cpp.o CMakeFiles/Test.dir/Game.cpp.o -o Test  -lSDL2 /usr/lib/x86_64-linux-gnu/libSDL2_image.so /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so 
