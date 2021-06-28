@@ -1,8 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/courseW.dir/Game.cpp.o"
-  "CMakeFiles/courseW.dir/GameObject.cpp.o"
-  "CMakeFiles/courseW.dir/TextureManager.cpp.o"
-  "CMakeFiles/courseW.dir/main.cpp.o"
+  "CMakeFiles/courseW.dir/src/ECS.cpp.o"
+  "CMakeFiles/courseW.dir/src/Game.cpp.o"
+  "CMakeFiles/courseW.dir/src/GameObject.cpp.o"
+  "CMakeFiles/courseW.dir/src/SpriteComponent.cpp.o"
+  "CMakeFiles/courseW.dir/src/TextureManager.cpp.o"
+  "CMakeFiles/courseW.dir/src/Vector.cpp.o"
+  "CMakeFiles/courseW.dir/src/main.cpp.o"
   "courseW"
   "courseW.pdb"
 )

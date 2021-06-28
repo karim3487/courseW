@@ -84,25 +84,49 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/karim/CLionProjects/CourseWork/Game.cpp">
+		<Unit filename="/home/karim/CLionProjects/CourseWork/header/ECS/Components.h">
 			<Option target="courseW"/>
 		</Unit>
-		<Unit filename="/home/karim/CLionProjects/CourseWork/Game.h">
+		<Unit filename="/home/karim/CLionProjects/CourseWork/header/ECS/ECS.h">
 			<Option target="courseW"/>
 		</Unit>
-		<Unit filename="/home/karim/CLionProjects/CourseWork/GameObject.cpp">
+		<Unit filename="/home/karim/CLionProjects/CourseWork/header/ECS/SpriteComponent.h">
 			<Option target="courseW"/>
 		</Unit>
-		<Unit filename="/home/karim/CLionProjects/CourseWork/GameObject.h">
+		<Unit filename="/home/karim/CLionProjects/CourseWork/header/ECS/TransformComponent.h">
 			<Option target="courseW"/>
 		</Unit>
-		<Unit filename="/home/karim/CLionProjects/CourseWork/TextureManager.cpp">
+		<Unit filename="/home/karim/CLionProjects/CourseWork/header/Game.h">
 			<Option target="courseW"/>
 		</Unit>
-		<Unit filename="/home/karim/CLionProjects/CourseWork/TextureManager.h">
+		<Unit filename="/home/karim/CLionProjects/CourseWork/header/GameObject.h">
 			<Option target="courseW"/>
 		</Unit>
-		<Unit filename="/home/karim/CLionProjects/CourseWork/main.cpp">
+		<Unit filename="/home/karim/CLionProjects/CourseWork/header/TextureManager.h">
+			<Option target="courseW"/>
+		</Unit>
+		<Unit filename="/home/karim/CLionProjects/CourseWork/header/Vector2D.h">
+			<Option target="courseW"/>
+		</Unit>
+		<Unit filename="/home/karim/CLionProjects/CourseWork/src/ECS.cpp">
+			<Option target="courseW"/>
+		</Unit>
+		<Unit filename="/home/karim/CLionProjects/CourseWork/src/Game.cpp">
+			<Option target="courseW"/>
+		</Unit>
+		<Unit filename="/home/karim/CLionProjects/CourseWork/src/GameObject.cpp">
+			<Option target="courseW"/>
+		</Unit>
+		<Unit filename="/home/karim/CLionProjects/CourseWork/src/SpriteComponent.cpp">
+			<Option target="courseW"/>
+		</Unit>
+		<Unit filename="/home/karim/CLionProjects/CourseWork/src/TextureManager.cpp">
+			<Option target="courseW"/>
+		</Unit>
+		<Unit filename="/home/karim/CLionProjects/CourseWork/src/Vector.cpp">
+			<Option target="courseW"/>
+		</Unit>
+		<Unit filename="/home/karim/CLionProjects/CourseWork/src/main.cpp">
 			<Option target="courseW"/>
 		</Unit>
 		<Unit filename="/home/karim/CLionProjects/CourseWork/CMakeLists.txt">

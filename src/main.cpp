@@ -1,4 +1,4 @@
-#include "Game.h"
+#include "../header/Game.h"
 
 using namespace std;
 Game *game = nullptr;

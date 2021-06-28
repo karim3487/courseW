@@ -3,13 +3,19 @@
 //
 
 #include <iostream>
-#include "Game.h"
-#include "TextureManager.h"
-#include "GameObject.h"
-using namespace std;
-GameObject *basket;
+#include "../header/Game.h"
+#include "../header/TextureManager.h"
+#include "../header/ECS/Components.h"
+#include "../header/Vector2D.h"
 
-GameObject *newBasket;
+using namespace std;
+
+
+
+SDL_Renderer *Game::renderer = nullptr;
+
+Manager manager;
+auto &basket(manager.addEntity());
 
 Game::Game() {
 
@@ -22,15 +28,15 @@ Game::~Game() {
 void Game::init(const char *title, int xpos, int ypos, int weight, int height, bool fullscreen) {
     int flags = 0;
 
-    if(fullscreen){
+    if (fullscreen) {
         flags = SDL_WINDOW_FULLSCREEN;
     }
 
-    if (SDL_Init(SDL_INIT_EVERYTHING) == 0){
+    if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
         cout << "Подсистема инициализированна!..." << endl;
 
         window = SDL_CreateWindow(title, xpos, ypos, weight, height, flags);
-        if(window){
+        if (window) {
             cout << "Окно создано!" << endl;
         }
 
@@ -43,9 +49,8 @@ void Game::init(const char *title, int xpos, int ypos, int weight, int height, b
     } else {
         isRunning = false;
     }
-    basket = new GameObject("../image/basket.png", renderer, 0, 0);
-    newBasket = new GameObject("../image/basket.png", renderer, 20, 20);
-
+    basket.addComponent<TransformComponent>();
+    basket.addComponent<SpriteComponent>("../image/basket.png");
 }
 
 void Game::handleEvents() {
@@ -64,15 +69,16 @@ void Game::handleEvents() {
 }
 
 void Game::update() {
-    basket->Update();
-    newBasket->Update();
+    manager.refresh();
+    manager.update();
+    basket.getComponent<TransformComponent>().position.Add(Vector2D(5, 2));
 }
 
 void Game::render() {
     SDL_RenderClear(renderer);
     // здксь будем добавлять что рендерить
-    basket->Render();
-    newBasket->Render();
+
+    manager.draw();
     SDL_RenderPresent(renderer);
 }
 
